@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact / Membership Registration</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f9;
+    color: #003366;margin: 0; padding: 20px;
+  }
+   header {
+      background-color: #004080;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {background-color: #003366;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  h1 {
+    text-align: center;
+    color: #004080;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  textarea {
+    resize: vertical;
+  }button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #004080;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  button:hover {
+    background: #003366;
+  }
+</style>
+
+<body>
+  <header>
+    <h1>Membership contact form</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="wings.html">Wings</a>
+    <a href="events.html">Events</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <a href="Membership contact form.html">Membership contact form</a>
+  </nav>
+
+  <div class="container">  
+
+
+  <h1>Membership Registration / Contact Form</h1>
+  <form action="#" method="POST">
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+
+    <label for="message">Message / Interest</label>
+    <textarea id="message" name="message" rows="4" placeholder="Write your message or interest here"></textarea>
+
+    <h2>Attach Your CV*</h2>
+
+   <form action="upload.php" method="POST" enctype="multipart/form-data">
+    <label for="cv">Upload CV (PDF/DOC):</label><br>
+    <input type="file" id="cv" name="cv" accept=".pdf, .doc, .docx" required><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>

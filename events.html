@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>UPRESS Events</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0;
+    background: #f9f9f9;
+    color: #003366;
+  }
+  h1, h2 {
+    text-align: center;
+    color: white;
+  }
+
+  header {
+      background-color: #004080;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    nav {background-color: #003366;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  .container {
+    max-width: 100%;
+    margin: auto;
+  }
+  .upcoming-events, .event-highlights {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  ul li:last-child {
+    border-bottom: none;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  .gallery img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  @media(max-width:600px) {.gallery img {
+      width: 100%;
+      height: auto;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>Events</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="wings.html">Wings</a>
+    <a href="events.html">Events</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <a href="Membership contact form.html">Membership contact form</a>
+  </nav>
+
+
+  <section class="upcoming-events">
+    <h2>Upcoming Events</h2>
+    <ul>
+      <li>Seminar on Emerging Tech - 25th August 2025</li>
+      <li>Workshop on Leadership Skills - 10th September 2025</li>
+      <li>Annual Sports Day - 5th October 2025</li>
+    </ul>
+  </section>
+
+  <section class="past-events">
+    <h2>Past Events Gallery</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/280x180?text=Event+1" alt="Event 1" />
+      <img src="https://via.placeholder.com/280x180?text=Event+2" alt="Event 2" />
+      <img src="https://via.placeholder.com/280x180?text=Event+3" alt="Event 3" />
+      <img src="https://via.placeholder.com/280x180?text=Event+4" alt="Event 4" />
+    </div>
+  </section>
+
+  <section class="event-highlights">
+    <h2>Event Highlights</h2>
+    <p>
+      UPRESS has successfully organized numerous impactful events including seminars, workshops, and sports activities to enrich student life. Stay tuned for more exciting programs!
+    </p>
+  </section>
+
+</div>
+
+</body>
+</html>
